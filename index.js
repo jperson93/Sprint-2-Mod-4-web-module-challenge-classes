@@ -221,6 +221,10 @@ class ProjectManager extends Instructor{
    this.favInstructor = favInstructor; 
   }
 
+  grade(student,subject){
+    return `${student.name} recevies a perfect score on ${subject}`;
+  }
+
   standUp(channel){
    return `${this.name} announces to ${channel}, @channel standy times!`;
   }
